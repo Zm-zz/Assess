@@ -11,12 +11,12 @@ public class GlobalManager : SingletonMonoIdlerAuto<GlobalManager>
     {
         if (Input.GetKeyUp(KeyCode.P))
         {
-            ChangeState("Procedure_InGame");
+            ChangeProcedure("Procedure_InGame");
         }
     }
 
-    public void ChangeState(string stateName)
+    public void ChangeProcedure(string procedureName)
     {
-        Main.Procedure.CurrentProcedure.ChangeState(stateName, procedureOwner);
+        Main.Procedure.CurrentProcedure.ChangeState(procedureName, procedureOwner);
     }
 }
