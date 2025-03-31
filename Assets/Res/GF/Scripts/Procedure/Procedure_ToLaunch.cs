@@ -10,7 +10,7 @@ namespace Launch
         {
             base.OnEnter(procedureOwner);
 
-            GlobalManager.procedureOwner = procedureOwner;
+            GlobalManager.Instance.procedureOwner = procedureOwner;
 
             if (!Main.Base.EditorResourceMode)
             {
