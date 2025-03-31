@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <BuildReport>
+    <Summary>
+      <ProductName>Launch</ProductName>
+      <CompanyName>Owner</CompanyName>
+      <GameIdentifier>unity.Game Framework.Star Force</GameIdentifier>
+      <GameFrameworkVersion>2021.05.31</GameFrameworkVersion>
+      <UnityVersion>2021.3.15f1c1</UnityVersion>
+      <ApplicableGameVersion>0.1.0</ApplicableGameVersion>
+      <InternalResourceVersion>8</InternalResourceVersion>
+      <Platforms>Windows</Platforms>
+      <AssetBundleCompression>LZ4</AssetBundleCompression>
+      <CompressionHelperTypeName>UnityGameFramework.Runtime.DefaultCompressionHelper</CompressionHelperTypeName>
+      <AdditionalCompressionSelected>True</AdditionalCompressionSelected>
+      <ForceRebuildAssetBundleSelected>True</ForceRebuildAssetBundleSelected>
+      <BuildEventHandlerTypeName>StarForce.Editor.StarForceBuildEventHandler</BuildEventHandlerTypeName>
+      <OutputDirectory>F:/UnityProject/Own/AssessGF/AssetBundle</OutputDirectory>
+      <BuildAssetBundleOptions>DeterministicAssetBundle, ForceRebuildAssetBundle, ChunkBasedCompression</BuildAssetBundleOptions>
+    </Summary>
+    <Resources Count="5">
+      <Resource Name="Prefabs/UIForms/UI_AboutForm" Extension="dat" LoadType="0" Packed="True">
+        <Assets Count="1">
+          <Asset Guid="4fde5f6e269f8af4ca3b5e9f4594d4eb" Name="Assets/Res/GF/Prefabs/UIForms/UI_AboutForm.prefab" Length="22747" HashCode="-317894760" />
+        </Assets>
+        <Codes>
+          <Windows Length="22714" HashCode="-1511961466" CompressedLength="22714" CompressedHashCode="-1511961466" />
+        </Codes>
+      </Resource>
+      <Resource Name="Prefabs/UIForms/UI_InGameForm" Extension="dat" LoadType="0" Packed="True">
+        <Assets Count="1">
+          <Asset Guid="1d0779e2648ca044ca1426128484bce3" Name="Assets/Res/GF/Prefabs/UIForms/UI_InGameForm.prefab" Length="9405" HashCode="714082237" />
+        </Assets>
+        <Codes>
+          <Windows Length="4636639" HashCode="-1348960528" CompressedLength="4636639" CompressedHashCode="-1348960528" />
+        </Codes>
+      </Resource>
+      <Resource Name="Prefabs/UIForms/UI_MenuForm" Extension="dat" LoadType="0" Packed="True">
+        <Assets Count="1">
+          <Asset Guid="5055d68fcbfd2bd4cbe8f028cb886681" Name="Assets/Res/GF/Prefabs/UIForms/UI_MenuForm.prefab" Length="36741" HashCode="34130250" />
+        </Assets>
+        <Codes>
+          <Windows Length="4637620" HashCode="-524872449" CompressedLength="4637620" CompressedHashCode="-524872449" />
+        </Codes>
+      </Resource>
+      <Resource Name="Prefabs/UIForms/UI_SettingForm" Extension="dat" LoadType="0" Packed="True">
+        <Assets Count="1">
+          <Asset Guid="1ea973702b297a94b8e1121c2ed022ac" Name="Assets/Res/GF/Prefabs/UIForms/UI_SettingForm.prefab" Length="87817" HashCode="-890171837" />
+        </Assets>
+        <Codes>
+          <Windows Length="4650397" HashCode="-120714676" CompressedLength="4650397" CompressedHashCode="-120714676" />
+        </Codes>
+      </Resource>
+      <Resource Name="Scenes/GFLaunch" Extension="dat" LoadType="0" Packed="True">
+        <Assets Count="1">
+          <Asset Guid="c08f0bff771c3204697b5a97cea96d99" Name="Assets/Res/GF/Scenes/GFLaunch.unity" Length="20266" HashCode="-991288070" />
+        </Assets>
+        <Codes>
+          <Windows Length="128360" HashCode="1193161901" CompressedLength="128360" CompressedHashCode="1193161901" />
+        </Codes>
+      </Resource>
+    </Resources>
+  </BuildReport>
+</UnityGameFramework>

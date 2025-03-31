@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <ResourceCollection>
+    <Resources>
+      <Resource Name="Prefabs/UIForms/UI_AboutForm" LoadType="0" Packed="True" />
+      <Resource Name="Prefabs/UIForms/UI_InGameForm" LoadType="0" Packed="True" />
+      <Resource Name="Prefabs/UIForms/UI_MenuForm" LoadType="0" Packed="True" />
+      <Resource Name="Prefabs/UIForms/UI_SettingForm" LoadType="0" Packed="True" />
+      <Resource Name="Scenes/GFLaunch" LoadType="0" Packed="True" />
+    </Resources>
+    <Assets>
+      <Asset Guid="1d0779e2648ca044ca1426128484bce3" ResourceName="Prefabs/UIForms/UI_InGameForm" />
+      <Asset Guid="1ea973702b297a94b8e1121c2ed022ac" ResourceName="Prefabs/UIForms/UI_SettingForm" />
+      <Asset Guid="4fde5f6e269f8af4ca3b5e9f4594d4eb" ResourceName="Prefabs/UIForms/UI_AboutForm" />
+      <Asset Guid="5055d68fcbfd2bd4cbe8f028cb886681" ResourceName="Prefabs/UIForms/UI_MenuForm" />
+      <Asset Guid="c08f0bff771c3204697b5a97cea96d99" ResourceName="Scenes/GFLaunch" />
+    </Assets>
+  </ResourceCollection>
+</UnityGameFramework>

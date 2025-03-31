@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 2732343882
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: prefabs/uiforms/ui_aboutform
+      Dependencies: {}
+    Info_1:
+      Name: prefabs/uiforms/ui_ingameform
+      Dependencies: {}
+    Info_2:
+      Name: prefabs/uiforms/ui_menuform
+      Dependencies: {}
+    Info_3:
+      Name: prefabs/uiforms/ui_settingform
+      Dependencies: {}
+    Info_4:
+      Name: scenes/gflaunch
+      Dependencies: {}
