@@ -1,18 +1,19 @@
 ﻿using GameFramework.Fsm;
 using GameFramework.Procedure;
+using UnityGameFramework.Runtime;
 
-public class Procedure_UgionLaunch : ProcedureBase
+public class Procedure_102 : ProcedureBase
 {
     protected override void OnInit(IFsm<IProcedureManager> procedureOwner)
     {
         base.OnInit(procedureOwner);
+
     }
 
     protected override void OnEnter(IFsm<IProcedureManager> procedureOwner)
     {
         base.OnEnter(procedureOwner);
 
-        GlobalManager.Instance.Launch(procedureOwner);
 
     }
 
@@ -25,6 +26,8 @@ public class Procedure_UgionLaunch : ProcedureBase
     protected override void OnLeave(IFsm<IProcedureManager> procedureOwner, bool isShutdown)
     {
         base.OnLeave(procedureOwner, isShutdown);
+
+
     }
 
     protected override void OnDestroy(IFsm<IProcedureManager> procedureOwner)

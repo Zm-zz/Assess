@@ -9,7 +9,8 @@ public static class GeneralUtility
 {
     public static void ChangeState(this ProcedureBase procedure, string stateName, IFsm<IProcedureManager> procedureOwner, string assemblyName = "Assembly-CSharp")
     {
-        string className = $"Launch.{stateName}, {assemblyName}";
+        // string className = $"Launch.{stateName}, {assemblyName}";
+        string className = $"{stateName}, {assemblyName}";
         Type procedureType = Type.GetType(className);
 
         if (procedureType == null)
@@ -20,7 +21,7 @@ public static class GeneralUtility
 
         // 获取当前类型的所有方法
         var currentType = procedure.GetType();
-        Debug.Log($"<color=green>当前类型:</color> {currentType.FullName}");
+        // Debug.Log($"<color=green>当前类型:</color> {currentType.FullName}");
 
         var allMethods = currentType.GetMethods(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.FlattenHierarchy);
 
@@ -45,7 +46,7 @@ public static class GeneralUtility
         {
             MethodInfo boundMethod = targetMethod.MakeGenericMethod(procedureType);
             boundMethod.Invoke(procedure, new[] { procedureOwner });
-            Debug.Log($"<color=green>当前类型:</color> {procedureType.FullName}");
+            // Debug.Log($"<color=green>当前类型:</color> {procedureType.FullName}");
         }
         catch (Exception e)
         {

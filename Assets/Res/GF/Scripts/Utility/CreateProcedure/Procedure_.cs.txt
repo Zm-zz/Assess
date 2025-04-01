@@ -13,6 +13,7 @@ public class Procedure_ : ProcedureBase
     {
         base.OnEnter(procedureOwner);
 
+         Log.Info($"<color=green>Enter Procedure£º</color>{GetType().FullName}");
     }
 
     protected override void OnUpdate(IFsm<IProcedureManager> procedureOwner, float elapseSeconds, float realElapseSeconds)
@@ -25,6 +26,7 @@ public class Procedure_ : ProcedureBase
     {
         base.OnLeave(procedureOwner, isShutdown);
 
+         Log.Info($"<color=orange>Leave Procedure£º</color>{GetType().FullName}");
     }
 
     protected override void OnDestroy(IFsm<IProcedureManager> procedureOwner)

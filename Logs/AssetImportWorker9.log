@@ -1,0 +1,1120 @@
+Using pre-set license
+Built from 'HEAD' branch; Version is '2021.3.15f1c1 (080beb55ecda) revision 527339'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'zh' Physical Memory: 65345 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.15f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker9
+-projectPath
+F:/UnityProject/Own/AssessGF
+-logFile
+Logs/AssetImportWorker9.log
+-srvPort
+64609
+Successfully changed project path to: F:/UnityProject/Own/AssessGF
+F:/UnityProject/Own/AssessGF
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [65616] Host "[IP] 192.168.110.16 [Port] 0 [Flags] 2 [Guid] 2780442115 [EditorId] 2780442115 [Version] 1048832 [Id] WindowsEditor(7,LocalUser) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [65616] Host "[IP] 192.168.110.16 [Port] 0 [Flags] 2 [Guid] 2780442115 [EditorId] 2780442115 [Version] 1048832 [Id] WindowsEditor(7,LocalUser) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+AS: AutoStreaming module initializing.
+Refreshing native plugins compatible for Editor in 59.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.15f1c1 (080beb55ecda)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.15f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/UnityProject/Own/AssessGF/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   NVIDIA
+    VRAM:     8067 MB
+    Driver:   32.0.15.6094
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1c1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1c1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1c1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004990 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 52.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.428 seconds
+Domain Reload Profiling:
+	ReloadAssembly (428ms)
+		BeginReloadAssembly (54ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (286ms)
+			LoadAssemblies (48ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (68ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (16ms)
+			SetupLoadedEditorAssemblies (163ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (34ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (52ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (52ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.023135 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\UnityProject\Own\AssessGF\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\UnityProject\Own\AssessGF\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Mono: successfully reloaded assembly
+- Completed reload, in  1.222 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1223ms)
+		BeginReloadAssembly (184ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (117ms)
+		EndReloadAssembly (919ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (172ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (593ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (274ms)
+				ProcessInitializeOnLoadMethodAttributes (226ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4750 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (59.1 KB). Loaded Objects now: 5273.
+Memory consumption went from 169.4 MB to 169.3 MB.
+Total: 12.833600 ms (FindLiveObjects: 0.325000 ms CreateObjectMapping: 0.113700 ms MarkObjects: 12.300600 ms  DeleteObjects: 0.093000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 717941.186573 seconds.
+  path: Assets/GameFramework/Libraries/GameFramework/UI/UIManager.cs
+  artifactKey: Guid(bb50665bbe9333e40b97210c87f3fd96) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Libraries/GameFramework/UI/UIManager.cs using Guid(bb50665bbe9333e40b97210c87f3fd96) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8cae4585033aec29b2f6a2f8e7b9b09d') in 0.069761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/GameFramework/Libraries/GameFramework/Resource/LoadAssetCallbacks.cs
+  artifactKey: Guid(04211c74d026d9a48a0580829dbb1d7c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Libraries/GameFramework/Resource/LoadAssetCallbacks.cs using Guid(04211c74d026d9a48a0580829dbb1d7c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9a6660b1dbce91b8322c16e8b8321485') in 0.003967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/GameFramework/Libraries/GameFramework/Resource/InitResourcesCompleteCallback.cs
+  artifactKey: Guid(ddbda823feaa0f54899d01cda477c9f8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Libraries/GameFramework/Resource/InitResourcesCompleteCallback.cs using Guid(ddbda823feaa0f54899d01cda477c9f8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '037f35242b893e52be47be873efbd307') in 0.005735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/GameFramework/Libraries/GameFramework/Resource/ResourceManager.ResourceLoader.LoadBinaryInfo.cs
+  artifactKey: Guid(2faf1f166da74904a8f48750b8aebb6a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Libraries/GameFramework/Resource/ResourceManager.ResourceLoader.LoadBinaryInfo.cs using Guid(2faf1f166da74904a8f48750b8aebb6a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '41f67ec03bdcf443bb1fdb09ed420a5d') in 0.005142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/GameFramework/Libraries/GameFramework/WebRequest/IWebRequestManager.cs
+  artifactKey: Guid(cf2b1194267441d438016f25ec975010) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Libraries/GameFramework/WebRequest/IWebRequestManager.cs using Guid(cf2b1194267441d438016f25ec975010) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3089a983db0036cb4e70f1ad306bf914') in 0.007772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/GameFramework/Libraries/GameFramework/Resource/UpdateResourcesCompleteCallback.cs
+  artifactKey: Guid(aa8c9fb22034d1645aec03cad3c51b53) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Libraries/GameFramework/Resource/UpdateResourcesCompleteCallback.cs using Guid(aa8c9fb22034d1645aec03cad3c51b53) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '89e7de15fce904b03a2807a347539ac3') in 0.004679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/GameFramework/Libraries/GameFramework/Network/NetworkManager.TcpNetworkChannel.cs
+  artifactKey: Guid(eb6417bf0ad0d8241bd9ee60441178b5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Libraries/GameFramework/Network/NetworkManager.TcpNetworkChannel.cs using Guid(eb6417bf0ad0d8241bd9ee60441178b5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bf4aeeaf5fd7824369bfe59bc3e5240d') in 0.004799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.090704 seconds.
+  path: Assets/GameFramework/Scripts/Editor/ResourceBuilder/ResourceBuilderController.FileSystemHelper.cs
+  artifactKey: Guid(23c25a2b879a092409b04f2e7851ac6b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Editor/ResourceBuilder/ResourceBuilderController.FileSystemHelper.cs using Guid(23c25a2b879a092409b04f2e7851ac6b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6b50ce823c7f84c5654bffc18e04d54f') in 0.006179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Localization/DefaultLocalizationHelper.cs
+  artifactKey: Guid(57465d541030d834b9d764c79af94e2e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Localization/DefaultLocalizationHelper.cs using Guid(57465d541030d834b9d764c79af94e2e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '59a9f3cbc9e210caccd3cd3117b368c7') in 0.009062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Download/DownloadComponent.cs
+  artifactKey: Guid(9259de0854ba2624aa59aca15c6af063) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Download/DownloadComponent.cs using Guid(9259de0854ba2624aa59aca15c6af063) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1256feac173a04173579881257808b86') in 0.006821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.RuntimeMemorySummaryWindow.cs
+  artifactKey: Guid(45a9f76b48e192d44b0de0eac60975b2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.RuntimeMemorySummaryWindow.cs using Guid(45a9f76b48e192d44b0de0eac60975b2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '20b5bdb43c848864f0babece3d240410') in 0.005039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerActiveWindowType.cs
+  artifactKey: Guid(d1baccfe5abb590428eb0322088bf4ce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerActiveWindowType.cs using Guid(d1baccfe5abb590428eb0322088bf4ce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '816874b09237b0d2dc461204362c260e') in 0.054393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GameFramework/Scripts/Editor/ResourceEditor/ResourceEditor.MenuState.cs
+  artifactKey: Guid(32b00a6c44b75494f8576b42717b1f1f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Editor/ResourceEditor/ResourceEditor.MenuState.cs using Guid(32b00a6c44b75494f8576b42717b1f1f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e3312e2d942b4c52a4cd61765c908696') in 0.008554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Base/GameFrameworkComponent.cs
+  artifactKey: Guid(bbf5faef1b7b7d24c8375006438a0cd0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Base/GameFrameworkComponent.cs using Guid(bbf5faef1b7b7d24c8375006438a0cd0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7f8d7bfc659380ff0649f793a7830d38') in 0.005555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Config/LoadConfigSuccessEventArgs.cs
+  artifactKey: Guid(8edee6cdf050d4f47ac48581f944d4ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Config/LoadConfigSuccessEventArgs.cs using Guid(8edee6cdf050d4f47ac48581f944d4ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd32681d579732b35e9a8e35e59fc78aa') in 0.569841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/UI/DefaultUIFormHelper.cs
+  artifactKey: Guid(e0703eb62bea8944aa3fe2aa95df420a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/UI/DefaultUIFormHelper.cs using Guid(e0703eb62bea8944aa3fe2aa95df420a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '825a288bdd35521f100d3091f59a3123') in 0.940514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Variable/VarUInt64.cs
+  artifactKey: Guid(d0195ac43c505b248a7d9d41beff1436) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Variable/VarUInt64.cs using Guid(d0195ac43c505b248a7d9d41beff1436) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b0f1896ba124ff26003d0211f7598c3b') in 0.081290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Sound/PlaySoundFailureEventArgs.cs
+  artifactKey: Guid(e72fc153d76f6e04e9b0036f95f75b3c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Sound/PlaySoundFailureEventArgs.cs using Guid(e72fc153d76f6e04e9b0036f95f75b3c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1be439d456cf58ff2c354c93c4a6d749') in 0.005687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Variable/VarTexture.cs
+  artifactKey: Guid(c0f43d324b63e5d48933b078ca2cc5f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Variable/VarTexture.cs using Guid(c0f43d324b63e5d48933b078ca2cc5f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd5529ff3048abd0c808ed21b34c8d1e8') in 0.005643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Utility/DefaultLogHelper.cs
+  artifactKey: Guid(646cb891dff23ba49982a2710fd1a218) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Utility/DefaultLogHelper.cs using Guid(646cb891dff23ba49982a2710fd1a218) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '800836ac3ae2bc53273d288c7ed79c5c') in 0.005833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Sound/PlaySoundUpdateEventArgs.cs
+  artifactKey: Guid(edad8ee73e896ab4cb00c9d37667699d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Sound/PlaySoundUpdateEventArgs.cs using Guid(edad8ee73e896ab4cb00c9d37667699d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f695fa9b1a0ec4f5d88554c837038a4d') in 0.044342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Variable/VarVector2.cs
+  artifactKey: Guid(ef03a8d73e6be4348802fc28c4777c49) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Variable/VarVector2.cs using Guid(ef03a8d73e6be4348802fc28c4777c49) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '25f44300bdc256df05cd31d127399b5c') in 0.036537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Variable/VarChar.cs
+  artifactKey: Guid(17c91d9b1ebba834385874fcf8c1076a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Variable/VarChar.cs using Guid(17c91d9b1ebba834385874fcf8c1076a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '20fd776647d9722cb0de04282e5b419a') in 0.031394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/DataTable/DataRowBase.cs
+  artifactKey: Guid(b2e51f0c2dffb5748b75e474971bbe09) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/DataTable/DataRowBase.cs using Guid(b2e51f0c2dffb5748b75e474971bbe09) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f1acb3dc30742cdce30e747013d0289a') in 0.005249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.OperationsWindow.cs
+  artifactKey: Guid(a695dd87b92d7374fbe3790f5a25e9d5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.OperationsWindow.cs using Guid(a695dd87b92d7374fbe3790f5a25e9d5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '21ca08a54ddd776f12c4b4778041059f') in 0.006016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/UI/UIStringKey.cs
+  artifactKey: Guid(087a56c75d247be4f8f7cf82ceb68e4b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/UI/UIStringKey.cs using Guid(087a56c75d247be4f8f7cf82ceb68e4b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '867df93fce3b8ab1589ec754608b5b51') in 0.033345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/GameFramework/Scripts/Editor/ResourceEditor/AssetSorterType.cs
+  artifactKey: Guid(5463b22a6a4019146a38f7b80dbe6fa7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Editor/ResourceEditor/AssetSorterType.cs using Guid(5463b22a6a4019146a38f7b80dbe6fa7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c1774f73beecc3a6ba1d4dbe2a5c5ad8') in 0.005060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Setting/PlayerPrefsSettingHelper.cs
+  artifactKey: Guid(a1323525062529f4b93e412ebda4914a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Setting/PlayerPrefsSettingHelper.cs using Guid(a1323525062529f4b93e412ebda4914a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e6ab99339192c0e31756c2a3c3bca32a') in 0.006270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Entity/EntityComponent.EntityGroup.cs
+  artifactKey: Guid(d93d1ae840acb2f449ac5f5cad2d0259) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Entity/EntityComponent.EntityGroup.cs using Guid(d93d1ae840acb2f449ac5f5cad2d0259) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8ec191e17b5e2e30ebf5834b97bd1a70') in 0.005897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Localization/LocalizationComponent.cs
+  artifactKey: Guid(706e6317a59f61044b2805be79f6b284) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Localization/LocalizationComponent.cs using Guid(706e6317a59f61044b2805be79f6b284) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '71d6532596cb74e14ecdcf78031e5814') in 0.023474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/ReferencePool/ReferenceStrictCheckType.cs
+  artifactKey: Guid(1abf21b782f0fec40bd37a5f17124b83) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/ReferencePool/ReferenceStrictCheckType.cs using Guid(1abf21b782f0fec40bd37a5f17124b83) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3ac48880f96d65c64e61063137e2cd6e') in 0.025847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Variable/VarUnityObject.cs
+  artifactKey: Guid(bc9d733f793fc00468089f8cdd6c1835) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Variable/VarUnityObject.cs using Guid(bc9d733f793fc00468089f8cdd6c1835) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd2593fe79930e91d5309c87f653726e4') in 0.007015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.TimeInformationWindow.cs
+  artifactKey: Guid(e8bdf40da7ffdc94ab9e39ba8daeaa3a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.TimeInformationWindow.cs using Guid(e8bdf40da7ffdc94ab9e39ba8daeaa3a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5e37024d794bb140ab5feace6907fc2c') in 0.047960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Config/LoadConfigFailureEventArgs.cs
+  artifactKey: Guid(ca7b842aaf795c6428b7a23287dec802) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Config/LoadConfigFailureEventArgs.cs using Guid(ca7b842aaf795c6428b7a23287dec802) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f2de120ac8118ad81083181ce9bd8df5') in 0.006106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Resource/ResourceApplyFailureEventArgs.cs
+  artifactKey: Guid(66fd3ef74ebb3c64a85b92714b6fca9f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Resource/ResourceApplyFailureEventArgs.cs using Guid(66fd3ef74ebb3c64a85b92714b6fca9f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0f09a55e0d3e9152a12d91a4e91fd4e0') in 0.006064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Sound/DefaultSoundAgentHelper.cs
+  artifactKey: Guid(3e41f05fd242c0d4fb2a5bd81ccca27c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Sound/DefaultSoundAgentHelper.cs using Guid(3e41f05fd242c0d4fb2a5bd81ccca27c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ab7df105d136b0d875e8837a1c825a64') in 0.066318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/UI/OpenUIFormDependencyAssetEventArgs.cs
+  artifactKey: Guid(29b2ea8e2fa48e143adc8e647e8103bf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/UI/OpenUIFormDependencyAssetEventArgs.cs using Guid(29b2ea8e2fa48e143adc8e647e8103bf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '13fe9be58503633249d111a73f62284a') in 0.075037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.cs
+  artifactKey: Guid(f05eaceeebe870a4595e51f998ed518b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.cs using Guid(f05eaceeebe870a4595e51f998ed518b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0226d824dd2d96f9c447547b73afee6a') in 0.006293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/UI/UIFormLogic.cs
+  artifactKey: Guid(0293f872933ead649893db69d7f4e2ce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/UI/UIFormLogic.cs using Guid(0293f872933ead649893db69d7f4e2ce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'eb944385e367277bcb6d6a11e115c22c') in 0.110136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/JKFrame/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll
+  artifactKey: Guid(47a84ebde4ec47fabb620b30cc7a3e5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll using Guid(47a84ebde4ec47fabb620b30cc7a3e5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '986c391b06cfd9555ce8544e94851499') in 0.037993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GameMain/UI/UISprites/Common/round-button-filled.png
+  artifactKey: Guid(e85864330b68dde498dcb6e8711815d3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/UI/UISprites/Common/round-button-filled.png using Guid(e85864330b68dde498dcb6e8711815d3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7ff6d688d34ce4cf9a6763e7dad1e66d') in 0.127773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/JKFrame/Scripts/2.System/11.Localization/LocalizationConfigBase.cs
+  artifactKey: Guid(6cdf73575d7060d4fa14bf9252ad0a70) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Scripts/2.System/11.Localization/LocalizationConfigBase.cs using Guid(6cdf73575d7060d4fa14bf9252ad0a70) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1c281f55938ec8a1082b0c51836cff81') in 0.004581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/JKFrame/Editor/Windows/EventSystem/EventSystemViewer.uxml
+  artifactKey: Guid(63354265a3340584fb4ebacd60cf8d87) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Editor/Windows/EventSystem/EventSystemViewer.uxml using Guid(63354265a3340584fb4ebacd60cf8d87) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a5693c8cb68873a0e0d61498c28e7ad5') in 0.245562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Res/GF/Prefabs/UIForms/UI_MenuForm.prefab
+  artifactKey: Guid(5055d68fcbfd2bd4cbe8f028cb886681) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Res/GF/Prefabs/UIForms/UI_MenuForm.prefab using Guid(5055d68fcbfd2bd4cbe8f028cb886681) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '68a031dc68326c8088a81142931fa88d') in 0.028234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/JKFrame/Scripts/2.System/9.UI/UISystem.cs
+  artifactKey: Guid(a9b718a2d1aff2c47a5c670f51335772) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Scripts/2.System/9.UI/UISystem.cs using Guid(a9b718a2d1aff2c47a5c670f51335772) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8a5dba3fd934976db4241473323e2286') in 0.005671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Res/GF/Scripts/UI/UIExtensionOther.cs
+  artifactKey: Guid(0404261086818a14083c8adaa923487f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Res/GF/Scripts/UI/UIExtensionOther.cs using Guid(0404261086818a14083c8adaa923487f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0492afe0971de36792e072a6f4b26cfb') in 0.005028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/JKFrame/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll
+  artifactKey: Guid(4873f2a8bdae42baa0406e8a61366ca1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll using Guid(4873f2a8bdae42baa0406e8a61366ca1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9af5866a7751db28a0e35944511f152f') in 0.008059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Resource/ResourceHelperBase.cs
+  artifactKey: Guid(231b6034e6f70794886826c9ba18dc2d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Resource/ResourceHelperBase.cs using Guid(231b6034e6f70794886826c9ba18dc2d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'af64b37e925f8b9d1fe6112fb8ff9b98') in 0.046067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/JKFrame/Scripts/2.System/1.Pool/ObjectPoolData.cs
+  artifactKey: Guid(420e207437aaee14fa98b8d0b5735e28) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Scripts/2.System/1.Pool/ObjectPoolData.cs using Guid(420e207437aaee14fa98b8d0b5735e28) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6918c8b10ac30a5b8d52af656195a888') in 0.025854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/GameMain/Scripts/Editor/DataTableGenerator/DataTableProcessor.SingleProcessor.cs
+  artifactKey: Guid(4c1502c70e1294543b14df45c7841a73) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Scripts/Editor/DataTableGenerator/DataTableProcessor.SingleProcessor.cs using Guid(4c1502c70e1294543b14df45c7841a73) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ef9e0e68debd2070af8e7f4edeb2f147') in 0.005064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GameMain/Scripts/Editor/DataTableGenerator/DataTableProcessor.Vector2Processor.cs
+  artifactKey: Guid(165df2a7d4a52984282f1c3bc87d5aaa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Scripts/Editor/DataTableGenerator/DataTableProcessor.Vector2Processor.cs using Guid(165df2a7d4a52984282f1c3bc87d5aaa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3a24c9ac460a166593dfde0e3a085379') in 0.006342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/GameMain/UI/UISprites/Icons/music.png
+  artifactKey: Guid(f438a72a91e1c3c4a9ced40888ffec96) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/UI/UISprites/Icons/music.png using Guid(f438a72a91e1c3c4a9ced40888ffec96) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd4d1ea2a38535a60b12df60ff17d3b9a') in 0.016716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DOTween/DOTween43.dll
+  artifactKey: Guid(380c1f663833e62479a3017cb0787da4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DOTween/DOTween43.dll using Guid(380c1f663833e62479a3017cb0787da4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e48782897410e78bf1a4928c3c29474e') in 0.006184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.FpsCounter.cs
+  artifactKey: Guid(4f24c805ead515d4286d3c03cd50f750) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.FpsCounter.cs using Guid(4f24c805ead515d4286d3c03cd50f750) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9156d789587d7fc6c7e9a8ac33602ef0') in 0.014346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/UI/CloseUIFormCompleteEventArgs.cs
+  artifactKey: Guid(e5119cf2f6bdac343a0b73ee3a0aa400) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/UI/CloseUIFormCompleteEventArgs.cs using Guid(e5119cf2f6bdac343a0b73ee3a0aa400) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '11a3270fb17a3e8e85cc6140969b89af') in 0.007670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/GameMain/Scripts/Editor/DataTableGenerator/DataTableProcessor.DataProcessorUtility.cs
+  artifactKey: Guid(83d25f17cbb262649959b7952811f8c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Scripts/Editor/DataTableGenerator/DataTableProcessor.DataProcessorUtility.cs using Guid(83d25f17cbb262649959b7952811f8c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '50971c0bf5e409e2d7506bf433965308') in 0.018532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/JKFrame/Scripts/1.Base/Singleton/SingletonMono.cs
+  artifactKey: Guid(23c57acd34c4e284bb51c472e3ed3a7e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Scripts/1.Base/Singleton/SingletonMono.cs using Guid(23c57acd34c4e284bb51c472e3ed3a7e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e265946e12e9961e89097ccd6f74dbee') in 0.016636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.QualityInformationWindow.cs
+  artifactKey: Guid(dc21c02fdf159d840a5254513a44c065) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.QualityInformationWindow.cs using Guid(dc21c02fdf159d840a5254513a44c065) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'df788a597a005f96e6fb98dc17f5eb6c') in 0.008310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.ConsoleWindow.cs
+  artifactKey: Guid(4a47e2730f999784eb1bbeefab72ef11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.ConsoleWindow.cs using Guid(4a47e2730f999784eb1bbeefab72ef11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '625c284eb835dd6c68189ef32beebe5e') in 0.006696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.WebPlayerInformationWindow.cs
+  artifactKey: Guid(eea52d2ddd7a8804f956d4b9a2d67e8f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.WebPlayerInformationWindow.cs using Guid(eea52d2ddd7a8804f956d4b9a2d67e8f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1bd5ac77812a99b49bd9578fd96400c6') in 0.025423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/GameMain/Scripts/Entity/EntityData/TargetableObjectData.cs
+  artifactKey: Guid(f866c15cf3f2a45429251d4a66f70c77) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Scripts/Entity/EntityData/TargetableObjectData.cs using Guid(f866c15cf3f2a45429251d4a66f70c77) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '04407bc993a862a6de83f74a896c8874') in 0.006664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/WebRequest/UnityWebRequestAgentHelper.cs
+  artifactKey: Guid(7e3014b70cd4acd41bed5c829dff3c30) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/WebRequest/UnityWebRequestAgentHelper.cs using Guid(7e3014b70cd4acd41bed5c829dff3c30) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '302cff24421a8ce19573064404116928') in 0.008070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/JKFrame/Scripts/6.Component/1.EventTool/JKEventListener.cs
+  artifactKey: Guid(d6d12d62315f04344bce0bee97107561) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Scripts/6.Component/1.EventTool/JKEventListener.cs using Guid(d6d12d62315f04344bce0bee97107561) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2ba6f635fc4a1ccb00f57dcad9bf7369') in 0.007198 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/GameMain/Scripts/Entity/EntityData/ArmorData.cs
+  artifactKey: Guid(5534e83b802db2d4e809edcfd9f98b15) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Scripts/Entity/EntityData/ArmorData.cs using Guid(5534e83b802db2d4e809edcfd9f98b15) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'df850a2cc2ee54913a03712d8d6297ec') in 0.006747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GameMain/UI/UISprites/Common/circle.png
+  artifactKey: Guid(24ca310f92a6796408f1db7647ec4e55) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/UI/UISprites/Common/circle.png using Guid(24ca310f92a6796408f1db7647ec4e55) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9e624a399e0890c0e862ce2e682e24e5') in 0.013602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GameMain/Scripts/Network/PacketHandler/SCHeartBeatHandler.cs
+  artifactKey: Guid(28aefb1e04aa1e0478d3a457a949bd68) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Scripts/Network/PacketHandler/SCHeartBeatHandler.cs using Guid(28aefb1e04aa1e0478d3a457a949bd68) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cd10f9cb8c8f43725c506cbf3d8e6a7b') in 0.006300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Variable/VarInt16.cs
+  artifactKey: Guid(fb22474f50a73704ebdc00b32ba1fd93) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Variable/VarInt16.cs using Guid(fb22474f50a73704ebdc00b32ba1fd93) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5bcc73246309441942867d4ebe33371d') in 0.007277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/GameMain/Scripts/Entity/EntityData/ThrusterData.cs
+  artifactKey: Guid(cedbe63d203a3834fa849737e97da300) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Scripts/Entity/EntityData/ThrusterData.cs using Guid(cedbe63d203a3834fa849737e97da300) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c42d2d5ad3befbdd85cd7f31ef68b3b5') in 0.018681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/JKFrame/Scripts/2.System/7.Save/SaveSystem.cs
+  artifactKey: Guid(d825d3558db7c564287c483fdfc79982) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Scripts/2.System/7.Save/SaveSystem.cs using Guid(d825d3558db7c564287c483fdfc79982) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '70c9c8b83a38fc9641728242089a3010') in 0.006285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GameMain/Scripts/Editor/DataTableGenerator/DataTableProcessor.RectProcessor.cs
+  artifactKey: Guid(235589b35d4744a4d8ef100da517e0ce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Scripts/Editor/DataTableGenerator/DataTableProcessor.RectProcessor.cs using Guid(235589b35d4744a4d8ef100da517e0ce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '16d124fe4d079f28d0bdf26a1059e714') in 0.011052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/squareBorderThickerEmpty.png
+  artifactKey: Guid(68d44d8dcc7f6d5459fc3afbd29f3638) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/squareBorderThickerEmpty.png using Guid(68d44d8dcc7f6d5459fc3afbd29f3638) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1e049ed866db7c11ab165bcab6a988e4') in 0.224402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/GameFramework/Libraries/GameFramework/Base/Log/GameFrameworkLog.cs
+  artifactKey: Guid(0eaa3b5d299086a44a0c72b3b394ff5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Libraries/GameFramework/Base/Log/GameFrameworkLog.cs using Guid(0eaa3b5d299086a44a0c72b3b394ff5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '63b65a98341d0883d88876a31ffab1fb') in 0.006008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/JKFrame/Plugins/Sirenix/Odin Inspector/Assets/Editor/SdfIconAtlas.png
+  artifactKey: Guid(2a0112a98875dfd488b5d10bdb8a4903) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Plugins/Sirenix/Odin Inspector/Assets/Editor/SdfIconAtlas.png using Guid(2a0112a98875dfd488b5d10bdb8a4903) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a0206a36dc8c082cdcbcc0697fb3a2b9') in 0.033251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/JKFrame/Plugins/Sirenix/Odin Inspector/Modules/Unity.Localization.data
+  artifactKey: Guid(5a1693d73a4f6e34d955789129c71e11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Plugins/Sirenix/Odin Inspector/Modules/Unity.Localization.data using Guid(5a1693d73a4f6e34d955789129c71e11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '56dce99c9914fc6ac68418bfc46643a0') in 0.006565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/ico_ui.png
+  artifactKey: Guid(d633a467ccc9f054c8e4d54f559e7e47) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/ico_ui.png using Guid(d633a467ccc9f054c8e4d54f559e7e47) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6bedf1c2f0f9baac7177437638672579') in 0.015355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DOTween/Editor/Imgs/Footer.png
+  artifactKey: Guid(7051dba417b3d53409f2918f1ea4938d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DOTween/Editor/Imgs/Footer.png using Guid(7051dba417b3d53409f2918f1ea4938d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5204c7a48389b87485b9045e5144dc41') in 0.011561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/JKFrame/Plugins/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset
+  artifactKey: Guid(a44c7d358b8f9234cb147d7de8d94ccd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Plugins/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset using Guid(a44c7d358b8f9234cb147d7de8d94ccd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '95802c9759a26d09812ffd283b6f036b') in 0.010166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Ugion/Prefabs/Panel/Menu/UIChange.cs
+  artifactKey: Guid(5072cf5527f09844cad22fa395e118b2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Prefabs/Panel/Menu/UIChange.cs using Guid(5072cf5527f09844cad22fa395e118b2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '847c0116d0c15ef580f00870e3c9a9b4') in 0.004541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Ugion/Prefabs/Panel/Menu/UI/ParS.png
+  artifactKey: Guid(c78ff6b5f27ca8b4c8042c6785f5d1a0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Prefabs/Panel/Menu/UI/ParS.png using Guid(c78ff6b5f27ca8b4c8042c6785f5d1a0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '974a2e7f959c209f3fa9876cdf981d17') in 0.014540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GameFramework/Libraries/GameFramework/Base/Version/Version.cs
+  artifactKey: Guid(f3d6b70970166fd489bde8b5b980532a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Libraries/GameFramework/Base/Version/Version.cs using Guid(f3d6b70970166fd489bde8b5b980532a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b426fe19abb199271470582152a049c0') in 0.005757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/ico_alignBL.png
+  artifactKey: Guid(6ff31a90008483d4f9655283e692a9eb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/ico_alignBL.png using Guid(6ff31a90008483d4f9655283e692a9eb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'acda189b33f7f1642d0945f69806c108') in 0.022302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/JKFrame/Plugins/Sirenix/Odin Inspector/Config/Editor/ImportSettingsConfig.asset
+  artifactKey: Guid(382ce447530ff8344b40762e631e057c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Plugins/Sirenix/Odin Inspector/Config/Editor/ImportSettingsConfig.asset using Guid(382ce447530ff8344b40762e631e057c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '264297bd693569215608b1320f8bb8cf') in 0.006897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/squareBorderEmpty03.png
+  artifactKey: Guid(8b9eafac1476c7c4d85bf9a23e37b1e4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/squareBorderEmpty03.png using Guid(8b9eafac1476c7c4d85bf9a23e37b1e4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '440c4ffd68b7e575bc0b5fbf1adbdbce') in 0.013896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/squareBorderEmpty02.png
+  artifactKey: Guid(5ca7b0c48e4ac8d4484a7204ec99e586) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/squareBorderEmpty02.png using Guid(5ca7b0c48e4ac8d4484a7204ec99e586) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5f0e467c9959516027e9992447c5d94d') in 0.013057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/GameFramework/Libraries/GameFramework/Base/DataProvider/DataProvider.cs
+  artifactKey: Guid(0b7920cc3abc6cf46bb79782ddd0918c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Libraries/GameFramework/Base/DataProvider/DataProvider.cs using Guid(0b7920cc3abc6cf46bb79782ddd0918c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2df2633e2d336ec33c0477a61e31d57e') in 0.014954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/blackSquareAlpha15.png
+  artifactKey: Guid(8b845c2637b99c845ae704c67df0f35e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/blackSquareAlpha15.png using Guid(8b845c2637b99c845ae704c67df0f35e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e8ac84df5bad4d228d7f3b3326472123') in 0.014302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Ugion/Prefabs/Panel/Menu/UI/联集 2@1x (1).png
+  artifactKey: Guid(8668c4aed43cbba478b576266d75f312) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Prefabs/Panel/Menu/UI/联集 2@1x (1).png using Guid(8668c4aed43cbba478b576266d75f312) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '42b93cafe5b51563ecb7157eebdeae94') in 0.014547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/whiteSquare_fadeOut_bt.png
+  artifactKey: Guid(8ee8aea758898634ebefe71817d5c893) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/whiteSquare_fadeOut_bt.png using Guid(8ee8aea758898634ebefe71817d5c893) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3aed553ab0ba5f0c6c652536363b7348') in 0.014791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/DemiEditor.xml
+  artifactKey: Guid(bdee934e3cee7d84892bf71412cfc424) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/DemiEditor.xml using Guid(bdee934e3cee7d84892bf71412cfc424) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b0ca65d9eaeeb4e70eeb24ec51ca185b') in 0.007032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/ico_cog_border.png
+  artifactKey: Guid(ae9b9659b3c6d444e8523a37a2f5fc26) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/ico_cog_border.png using Guid(ae9b9659b3c6d444e8523a37a2f5fc26) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd331b5e5d3196a7393744f205bf3ce70') in 0.015092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/squareBorder.png
+  artifactKey: Guid(6871134bcc120634ebb45f0aa22209d0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/squareBorder.png using Guid(6871134bcc120634ebb45f0aa22209d0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '31e6f21247ed0ac1256c8a487392b8d5') in 0.014087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/ico_star_border.png
+  artifactKey: Guid(482e1afe73d2e824fa74af5f5c909056) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/ico_star_border.png using Guid(482e1afe73d2e824fa74af5f5c909056) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9a1187d6be9c72a7e97e5d99fb67d684') in 0.011862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GameFramework/Libraries/GameFramework/Base/TaskPool/TaskBase.cs
+  artifactKey: Guid(94dcdaaecaf515441b1216dcdcfaaaaa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Libraries/GameFramework/Base/TaskPool/TaskBase.cs using Guid(94dcdaaecaf515441b1216dcdcfaaaaa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ed6269d3c4bec28dd5db735d98b08e58') in 0.005529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Variable/VarObject.cs
+  artifactKey: Guid(f3b2d458c0eb0244c905a819c9fec4f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Variable/VarObject.cs using Guid(f3b2d458c0eb0244c905a819c9fec4f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd6db985e742e68ca56919290a4c9d330') in 0.004736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Res/GF/Prefabs/UIForms/UI_AboutForm.prefab
+  artifactKey: Guid(4fde5f6e269f8af4ca3b5e9f4594d4eb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Res/GF/Prefabs/UIForms/UI_AboutForm.prefab using Guid(4fde5f6e269f8af4ca3b5e9f4594d4eb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9ddce36179baa93f147fbfc63a5797c2') in 0.014037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Res/GF/Scripts/Event/TestEvent.cs
+  artifactKey: Guid(a28a63b982b427e4b91953d7e0dfc021) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Res/GF/Scripts/Event/TestEvent.cs using Guid(a28a63b982b427e4b91953d7e0dfc021) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8447eda34fbe9de6d4345aca59b940bc') in 0.004129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Ugion/Prefabs/Panel/Menu/Par_Menu.prefab
+  artifactKey: Guid(4962bc6f719af8b4db24ee168beb4901) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Prefabs/Panel/Menu/Par_Menu.prefab using Guid(4962bc6f719af8b4db24ee168beb4901) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '27c611f075d720ae732ecb198bd1e141') in 0.019651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Scene/UnloadSceneSuccessEventArgs.cs
+  artifactKey: Guid(c38ffda9363f4c64686888e44d017e1f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Scene/UnloadSceneSuccessEventArgs.cs using Guid(c38ffda9363f4c64686888e44d017e1f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a7bfdcf37b5c4b490fadab431690b1a5') in 0.006033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/JKFrame/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll
+  artifactKey: Guid(5651992cdad94894a3af7dc3f1da9170) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll using Guid(5651992cdad94894a3af7dc3f1da9170) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '91f6b695a85bf91723f864115766b603') in 0.011541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DOTween/DOTween.dll.mdb
+  artifactKey: Guid(4f007001a22b3d24dae350342c4d19c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DOTween/DOTween.dll.mdb using Guid(4f007001a22b3d24dae350342c4d19c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7f6b9f43d85d675e8c202cf3a5e07246') in 0.009049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GameMain/Scripts/Entity/EntityData/AircraftData.cs
+  artifactKey: Guid(ac7fd4913c0cf124d8998eec4065d726) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Scripts/Entity/EntityData/AircraftData.cs using Guid(ac7fd4913c0cf124d8998eec4065d726) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9bd716ac4e3b024d95a614af5e226a43') in 0.010505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/WebRequest/WebRequestStartEventArgs.cs
+  artifactKey: Guid(3f73533092cec3d498691d5805a8f856) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/WebRequest/WebRequestStartEventArgs.cs using Guid(3f73533092cec3d498691d5805a8f856) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2598eee94a944b794006d83328cbc5e6') in 0.025760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Res/GF/Prefabs/UIForms/UI_InGameForm.prefab
+  artifactKey: Guid(1d0779e2648ca044ca1426128484bce3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Res/GF/Prefabs/UIForms/UI_InGameForm.prefab using Guid(1d0779e2648ca044ca1426128484bce3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ee3b58ffdc7fddbb6fc259ced0249157') in 0.019269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/ico_comment_border.png
+  artifactKey: Guid(a2ccb15d4bd49ec40832fec01046ba00) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Ugion/Plugin/Demigiant/DemiLib/Core/Editor/Imgs/ico_comment_border.png using Guid(a2ccb15d4bd49ec40832fec01046ba00) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b0994b222ca1921013773be1a051ebf9') in 0.012817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/JKFrame/Scripts/2.System/8.LogSystem/RuntimeScreeLogger.cs
+  artifactKey: Guid(69943dfbe9dbee04ca7736ba492f7421) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/JKFrame/Scripts/2.System/8.LogSystem/RuntimeScreeLogger.cs using Guid(69943dfbe9dbee04ca7736ba492f7421) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cc03b78e60b3906a5942ace37ec2922b') in 0.004464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.ObjectPoolInformationWindow.cs
+  artifactKey: Guid(5898a6ad35652924590c863ef4bc6341) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Debugger/DebuggerComponent.ObjectPoolInformationWindow.cs using Guid(5898a6ad35652924590c863ef4bc6341) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6885ade645c8e144eb39968abb8bacbd') in 0.013911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GameFramework/Scripts/Runtime/Resource/ResourceUpdateStartEventArgs.cs
+  artifactKey: Guid(b52ac443f249b2549827406d63bcbc57) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameFramework/Scripts/Runtime/Resource/ResourceUpdateStartEventArgs.cs using Guid(b52ac443f249b2549827406d63bcbc57) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '08cbae42596bc2a8b8f6545cfc25b543') in 0.006283 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 19.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 42 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (26.0 KB). Loaded Objects now: 5275.
+Memory consumption went from 75.9 MB to 75.9 MB.
+Total: 13.635200 ms (FindLiveObjects: 0.369100 ms CreateObjectMapping: 0.088200 ms MarkObjects: 13.139000 ms  DeleteObjects: 0.037900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.038605 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\UnityProject\Own\AssessGF\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\UnityProject\Own\AssessGF\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.932 seconds
+Domain Reload Profiling:
+	ReloadAssembly (932ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (744ms)
+			LoadAssemblies (79ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (165ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (429ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (236ms)
+				ProcessInitializeOnLoadMethodAttributes (114ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4744 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (27.2 KB). Loaded Objects now: 5278.
+Memory consumption went from 169.5 MB to 169.5 MB.
+Total: 9.216000 ms (FindLiveObjects: 0.159500 ms CreateObjectMapping: 0.061100 ms MarkObjects: 8.969300 ms  DeleteObjects: 0.024800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.044309 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\UnityProject\Own\AssessGF\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\UnityProject\Own\AssessGF\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.028 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1028ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (821ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (172ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (434ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (44ms)
+				ProcessInitializeOnLoadAttributes (251ms)
+				ProcessInitializeOnLoadMethodAttributes (113ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4744 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (27.3 KB). Loaded Objects now: 5281.
+Memory consumption went from 169.5 MB to 169.5 MB.
+Total: 9.229300 ms (FindLiveObjects: 0.175500 ms CreateObjectMapping: 0.064000 ms MarkObjects: 8.967400 ms  DeleteObjects: 0.021400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.037910 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\UnityProject\Own\AssessGF\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\UnityProject\Own\AssessGF\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.985 seconds
+Domain Reload Profiling:
+	ReloadAssembly (985ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (756ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (155ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (449ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (253ms)
+				ProcessInitializeOnLoadMethodAttributes (115ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4744 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (27.3 KB). Loaded Objects now: 5284.
+Memory consumption went from 169.5 MB to 169.5 MB.
+Total: 9.167700 ms (FindLiveObjects: 0.246300 ms CreateObjectMapping: 0.061300 ms MarkObjects: 8.839500 ms  DeleteObjects: 0.019800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

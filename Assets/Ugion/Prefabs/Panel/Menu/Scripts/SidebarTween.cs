@@ -34,7 +34,6 @@ public class SidebarTween : MonoBehaviour
 
     private void ToggleSidebar()
     {
-        Debug.Log(111111111111);
         bool_IsHidden = !bool_IsHidden;
         rectTrans_Sidebar.DOAnchorPos(bool_IsHidden ? v2_HiddenPosition : v2_ShownPosition, float_Duration).SetEase(enum_EaseType);
         rectTrans_RotationArrow.DOLocalRotate(bool_IsHidden ? v3_ArrowHideRotation : v3_ArrowShowRotation, float_Duration).SetEase(enum_EaseType);
