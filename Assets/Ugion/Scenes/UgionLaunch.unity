@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -738,7 +738,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1079
 --- !u!224 &1244342723559763964
 RectTransform:
   m_ObjectHideFlags: 0
@@ -817,6 +817,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1244342723559763964}
     m_Modifications:
+    - target: {fileID: 1909881902, guid: b87f9783d359b8242a2e1e152e8adf3b, type: 3}
+      propertyPath: m_Name
+      value: Decorate
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287954667282277473, guid: b87f9783d359b8242a2e1e152e8adf3b,
+        type: 3}
+      propertyPath: _IsDefaultEnter
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7857290195863256143, guid: b87f9783d359b8242a2e1e152e8adf3b,
         type: 3}
       propertyPath: m_AnchorMax.x
