@@ -10,6 +10,8 @@ public class OptionBase : MonoBehaviour
     [ReadOnly] public ProcedureInfo procedureInfo;
     [ReadOnly] public MenuManager menuManager;
 
+    [ReadOnly] public int index = -1;
+
     private Button but_Self;
     private UIChange _UIChange;
 
@@ -48,13 +50,14 @@ public class OptionBase : MonoBehaviour
     /// 初始化 
     /// clickAction 为 null，不会赋值
     /// </summary>
-    public virtual void Initialize(MenuManager menuManager, ProcedureInfo procedureInfo)
+    public virtual void Initialize(MenuManager menuManager, ProcedureInfo procedureInfo, int index)
     {
         but_Self = GetComponent<Button>();
         _UIChange = GetComponent<UIChange>();
 
         bool_IsOn = false;
 
+        this.index = index;
         this.procedureInfo = procedureInfo;
         this.menuManager = menuManager;
 

@@ -1,10 +1,13 @@
 using GameFramework.Fsm;
 using GameFramework.Procedure;
 using Launch;
+using StarForce;
 using UnityEngine;
 
 public class GlobalManager : SingletonMonoIdlerAuto<GlobalManager>
 {
+    public GameMode GameMode = GameMode.Train;
+
     private IFsm<IProcedureManager> procedureOwner;
 
     private MenuManager _MenuManager;
@@ -32,4 +35,10 @@ public class GlobalManager : SingletonMonoIdlerAuto<GlobalManager>
     {
         Main.Procedure.CurrentProcedure.ChangeState(procedureName, procedureOwner);
     }
+}
+
+public enum GameMode
+{
+    Train,
+    Exam,
 }

@@ -1,5 +1,6 @@
 using Launch;
 using Sirenix.OdinInspector;
+using StarForce;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
@@ -43,11 +44,17 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private bool _IsDefaultEnter;
     [ReadOnly][ShowInInspector] private ProcedureConfig currentProcedure;
 
+    [ReadOnly][ShowInInspector][BoxGroup("IndexCode")] private int currentMainIndex = -1;
+    [ReadOnly][ShowInInspector][BoxGroup("IndexCode")] private int currentSubIndex = -1;
+
     [ReadOnly][ShowInInspector] private Dictionary<OptionBase, List<OptionBase>> options = new Dictionary<OptionBase, List<OptionBase>>();
 
     public void Initialize()
     {
         trans_Parent = transform.Find("Scroll Vertical/Viewport/Content");
+
+        currentMainIndex = -1;
+        currentSubIndex = -1;
 
         UnLoadAllOptions();
         LoadAllOptions();
@@ -58,6 +65,8 @@ public class MenuManager : MonoBehaviour
         }
     }
 
+    private int mainIndex = 0;
+    private int subIndex = 0;
     private void LoadAllOptions()
     {
         procedureData.Procedures.ForEach(i =>
@@ -70,7 +79,7 @@ public class MenuManager : MonoBehaviour
     {
         OptionBase option = Instantiate(pre_ParMenu, parent).GetComponent<OptionBase>();
         option.gameObject.name = $"Main_{procedureInfo.ProcedureConfig.procedureTitle}";
-        option.Initialize(this, procedureInfo);
+        option.Initialize(this, procedureInfo, mainIndex++);
 
         options.Add(option, new List<OptionBase>());
 
@@ -85,7 +94,7 @@ public class MenuManager : MonoBehaviour
                 OptionBase subOption = Instantiate(pre_SubMenu, subPar.transform).GetComponent<OptionBase>();
                 subOption.gameObject.name = $"Sub_{config.procedureTitle}";
                 ProcedureInfo info = new ProcedureInfo(config, false, null);
-                subOption.Initialize(this, info);
+                subOption.Initialize(this, info, subIndex++);
 
                 if (options.ContainsKey(option))
                 {
@@ -168,6 +177,8 @@ public class MenuManager : MonoBehaviour
                 return;
             }
 
+            if (GlobalManager.Instance.GameMode == GameMode.Exam && currOption.index < currentMainIndex) return;
+
             // 关闭其他主流程及其子流程
             foreach (var option in options.Keys.Where(o => o != currOption && o.Bool_IsOn))
             {
@@ -181,6 +192,8 @@ public class MenuManager : MonoBehaviour
             {
                 return;
             }
+
+            if (GlobalManager.Instance.GameMode == GameMode.Exam && currOption.index < currentSubIndex) return;
 
             // 关闭当前主流程下的其他子流程
             foreach (var option in options[mainProcedure].Where(o => o != currOption && o.Bool_IsOn))
@@ -196,6 +209,11 @@ public class MenuManager : MonoBehaviour
         {
             options[mainProcedure].First().ChangeState(true);
         }
+
+        if (isMain)
+            currentMainIndex = currOption.index;
+        else
+            currentSubIndex = currOption.index;
     }
 
     private void CloseOptionWithSubs(OptionBase option)
