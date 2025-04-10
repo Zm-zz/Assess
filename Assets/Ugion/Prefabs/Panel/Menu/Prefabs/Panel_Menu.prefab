@@ -1004,7 +1004,6 @@ GameObject:
   - component: {fileID: 7857290196847569809}
   - component: {fileID: 7857290196847569822}
   - component: {fileID: 4763869463333890597}
-  - component: {fileID: 5287954667282277473}
   m_Layer: 5
   m_Name: Panel_Menu
   m_TagString: Untagged
@@ -1089,26 +1088,6 @@ MonoBehaviour:
   float_Duration: 0.3
   float_HideOffset: 35
   enum_EaseType: 6
---- !u!114 &5287954667282277473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7857290196847569818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d773add3ec792843b64ef7e5d98a70e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pre_ParMenu: {fileID: 377688386565136432, guid: 4962bc6f719af8b4db24ee168beb4901,
-    type: 3}
-  pre_SubPar: {fileID: 2516132719197730667, guid: 686c8946d6be166448c02947df959cca,
-    type: 3}
-  pre_SubMenu: {fileID: 8266330830163016211, guid: 3a46fce99a2f952478edfeaa35f026ce,
-    type: 3}
-  procedureData: {fileID: 11400000, guid: d09b1b3f08d9d60449da7a4018097fa5, type: 2}
-  _IsDefaultEnter: 0
 --- !u!1 &7857290196940284773
 GameObject:
   m_ObjectHideFlags: 0

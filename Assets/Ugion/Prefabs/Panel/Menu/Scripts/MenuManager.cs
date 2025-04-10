@@ -1,11 +1,8 @@
-using Launch;
 using Sirenix.OdinInspector;
-using StarForce;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Events;
 
 //                 _ooOoo_
 //                o8888888o
@@ -28,248 +25,277 @@ using UnityEngine.Events;
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 //          拜赛博佛祖       积电子功德
 
-
-public class MenuManager : MonoBehaviour
+namespace Launch
 {
-    private Transform trans_Parent;
-
-    [Header("---------- Create")]
-    public GameObject pre_ParMenu;
-    public GameObject pre_SubPar;
-    public GameObject pre_SubMenu;
-
-    public ProcedureData procedureData;
-
-    [Header("---------- Config")]
-    [SerializeField] private bool _IsDefaultEnter;
-    [ReadOnly][ShowInInspector] private ProcedureConfig currentProcedure;
-
-    [ReadOnly][ShowInInspector][BoxGroup("IndexCode")] private int currentMainIndex = -1;
-    [ReadOnly][ShowInInspector][BoxGroup("IndexCode")] private int currentSubIndex = -1;
-
-    [ReadOnly][ShowInInspector] private Dictionary<OptionBase, List<OptionBase>> options = new Dictionary<OptionBase, List<OptionBase>>();
-
-    public void Initialize()
+    public class MenuManager : MonoBehaviour
     {
-        trans_Parent = transform.Find("Scroll Vertical/Viewport/Content");
+        private Transform trans_Parent;
 
-        currentMainIndex = -1;
-        currentSubIndex = -1;
+        [BoxGroup("必要预制")] public GameObject pre_SpreadOption;
+        [BoxGroup("必要预制")] public GameObject pre_SubMenu;
 
-        UnLoadAllOptions();
-        LoadAllOptions();
+        [BoxGroup("配置项")] public ProcedureData procedureData;
+        [BoxGroup("配置项")][SerializeField] private bool _IsDefaultEnter;
 
-        if (_IsDefaultEnter)
+        [ReadOnly][ShowInInspector][BoxGroup("实时追踪数据")] private ProcedureConfig currentProcedure;
+        [ReadOnly][ShowInInspector][BoxGroup("实时追踪数据")] private int currentMainIndex = -1;
+        [ReadOnly][ShowInInspector][BoxGroup("实时追踪数据")] private int currentSubIndex = -1;
+
+        [ReadOnly][ShowInInspector][BoxGroup("动态对象")] private List<GameObject> spreadOptions = new List<GameObject>();
+        [ReadOnly][ShowInInspector][BoxGroup("动态对象")] private Dictionary<OptionBase, List<OptionBase>> options = new Dictionary<OptionBase, List<OptionBase>>();
+
+        // 步骤索引标识
+        private int mainIndex = 0;
+        private int subIndex = 0;
+
+        public void Initialize()
         {
-            EnterProcedure(options.Keys.First());
+            trans_Parent = GameObject.Find("MainCanvas/Panel_Menu/Scroll Vertical/Viewport/Content").transform;
+
+            InitOptions(procedureData);
         }
-    }
 
-    private int mainIndex = 0;
-    private int subIndex = 0;
-    private void LoadAllOptions()
-    {
-        procedureData.Procedures.ForEach(i =>
+        private void InitOptions(ProcedureData procedureData)
         {
-            CreateOption(i, trans_Parent);
-        });
-    }
+            currentMainIndex = -1;
+            currentSubIndex = -1;
 
-    private void CreateOption(ProcedureInfo procedureInfo, Transform parent, UnityAction clickAction = null)
-    {
-        OptionBase option = Instantiate(pre_ParMenu, parent).GetComponent<OptionBase>();
-        option.gameObject.name = $"Main_{procedureInfo.ProcedureConfig.procedureTitle}";
-        option.Initialize(this, procedureInfo, mainIndex++);
+            UnLoadAllOptions();
+            LoadAllOptions(procedureData);
 
-        options.Add(option, new List<OptionBase>());
-
-        if (procedureInfo.hasExtension)
-        {
-            GameObject subPar = Instantiate(pre_SubPar, parent);
-            subPar.name = $"SubParent_{procedureInfo.ProcedureConfig.procedureTitle}";
-            option.extensionMenu = subPar.transform;
-
-            foreach (var config in option.procedureInfo.extendedProcedures)
+            if (_IsDefaultEnter)
             {
-                OptionBase subOption = Instantiate(pre_SubMenu, subPar.transform).GetComponent<OptionBase>();
-                subOption.gameObject.name = $"Sub_{config.procedureTitle}";
-                ProcedureInfo info = new ProcedureInfo(config, false, null);
-                subOption.Initialize(this, info, subIndex++);
-
-                if (options.ContainsKey(option))
-                {
-                    options[option].Add(subOption);
-                }
-                else
-                {
-                    options.Add(option, new List<OptionBase>() { subOption });
-                }
-            }
-
-            subPar.SetActive(false);
-        }
-    }
-
-    public void UnLoadAllOptions()
-    {
-        // 使用HashSet避免重复销毁
-        var allOptions = new HashSet<OptionBase>();
-
-        // 收集所有子物体
-        foreach (var subList in options.Values)
-        {
-            if (subList == null) continue;
-
-            foreach (var option in subList)
-            {
-                if (option != null) allOptions.Add(option);
+                EnterProcedure(options.Keys.First());
             }
         }
 
-        // 收集所有主物体
-        foreach (var mainOption in options.Keys)
+        private void LoadAllOptions(ProcedureData procedureData)
         {
-            if (mainOption != null) allOptions.Add(mainOption);
-        }
+            mainIndex = 0;
+            subIndex = 0;
 
-        // 统一销毁
-        foreach (var option in allOptions)
-        {
-            if (option.gameObject == null) continue;
-
-            if (Application.isPlaying)
+            procedureData.Procedures.ForEach(i =>
             {
-                Destroy(option.gameObject);
-            }
-            else
-            {
-                DestroyImmediate(option.gameObject);
-            }
-        }
-
-        options.Clear();
-    }
-
-    private bool JudgeMainProcedure(OptionBase option, out OptionBase mainProcedure)
-    {
-        // 检查是否是主流程(字典键)
-        if (options.TryGetValue(option, out _))
-        {
-            mainProcedure = option;
-            return true;
-        }
-
-        // 查找作为子流程的主流程
-        mainProcedure = options.FirstOrDefault(kv => kv.Value?.Contains(option) == true).Key;
-        return false;
-    }
-
-    public void ChangeState(OptionBase currOption)
-    {
-        bool isMain = JudgeMainProcedure(currOption, out OptionBase mainProcedure);
-
-        // 关闭其他已选中的流程
-        if (isMain)
-        {
-            // 不可重复选
-            foreach (var option in options.Keys.Where(o => o == currOption && o.Bool_IsOn))
-            {
-                return;
-            }
-
-            if (GlobalManager.Instance.GameMode == GameMode.Exam && currOption.index < currentMainIndex) return;
-
-            // 关闭其他主流程及其子流程
-            foreach (var option in options.Keys.Where(o => o != currOption && o.Bool_IsOn))
-            {
-                CloseOptionWithSubs(option);
-            }
-        }
-        else
-        {
-            // 不可重复选
-            foreach (var option in options[mainProcedure].Where(o => o == currOption && o.Bool_IsOn))
-            {
-                return;
-            }
-
-            if (GlobalManager.Instance.GameMode == GameMode.Exam && currOption.index < currentSubIndex) return;
-
-            // 关闭当前主流程下的其他子流程
-            foreach (var option in options[mainProcedure].Where(o => o != currOption && o.Bool_IsOn))
-            {
-                CloseOption(option);
-            }
-        }
-
-        // 启用当前选项
-        currOption.ChangeState(true);
-        // 启用拓展第一项
-        if (currOption.procedureInfo.hasExtension)
-        {
-            options[mainProcedure].First().ChangeState(true);
-        }
-
-        if (isMain)
-            currentMainIndex = currOption.index;
-        else
-            currentSubIndex = currOption.index;
-    }
-
-    private void CloseOptionWithSubs(OptionBase option)
-    {
-        if (option.procedureInfo.hasExtension)
-        {
-            options[option].ForEach(o =>
-            {
-                if (o.Bool_IsOn)
-                {
-                    CloseOption(o);
-                }
+                CreateOption(i, trans_Parent);
             });
         }
 
-        CloseOption(option);
-    }
-
-    private void CloseOption(OptionBase option)
-    {
-        option.ChangeState(false);
-    }
-
-    /// <summary>
-    /// 自定义进入流程
-    /// </summary>
-    private void EnterProcedure(OptionBase option)
-    {
-        bool isMain = JudgeMainProcedure(option, out OptionBase _Main);
-
-        if (isMain && option.procedureInfo.hasExtension)
+        private void CreateOption(ProcedureInfo procedureInfo, Transform parent)
         {
-            ChangeState(option);
-            ChangeState(options[option].First());
-        }
-        else if (isMain && !option.procedureInfo.hasExtension)
-        {
-            ChangeState(option);
-        }
-        else if (!isMain)
-        {
-            ChangeState(_Main);
-            ChangeState(option);
-        }
-    }
+            GameObject spreadOption = Instantiate(pre_SpreadOption, parent);
+            spreadOption.name = $"Option_{procedureInfo.ProcedureConfig.procedureTitle}";
+            spreadOptions.Add(spreadOption);
 
-    /// <summary>
-    /// 框架进入流程
-    /// </summary>
-    public void ChangeProcedure(ProcedureConfig config)
-    {
-        Main.Event.Fire(this, Event_ChangeState.Create(new Event_ChangeState(config)));
-        currentProcedure = config;
+            OptionBase option = spreadOption.GetComponentInChildren<OptionBase>();
+            option.gameObject.name = $"Main_{procedureInfo.ProcedureConfig.procedureTitle}";
+            option.Initialize(this, procedureInfo, mainIndex++);
+
+            options.Add(option, new List<OptionBase>());
+
+            Transform subSpread = spreadOption.transform.Find("Sub Spread");
+
+            if (procedureInfo.hasExtension)
+            {
+                subSpread.GetComponent<FlexSubOptions>().preferredHeight = option.procedureInfo.extendedProcedures.Count * pre_SubMenu.GetComponent<RectTransform>().rect.height; ;
+
+                foreach (var config in option.procedureInfo.extendedProcedures)
+                {
+                    OptionBase subOption = Instantiate(pre_SubMenu, subSpread).GetComponent<OptionBase>();
+                    RectTransform subRect = subOption.GetComponent<RectTransform>();
+                    subOption.gameObject.name = $"Sub_{config.procedureTitle}";
+
+                    if (subSpread.childCount > 1)
+                    {
+                        Vector3 lastPos = subSpread.GetChild(subSpread.childCount - 2).GetComponent<RectTransform>().position;
+                        Vector3 newPos = new Vector3(lastPos.x, lastPos.y - subRect.rect.height, 0);
+                        subRect.position = newPos;
+                    }
+
+                    ProcedureInfo info = new ProcedureInfo(config, false, null);
+                    subOption.Initialize(this, info, subIndex++);
+
+                    if (options.ContainsKey(option))
+                    {
+                        options[option].Add(subOption);
+                    }
+                    else
+                    {
+                        options.Add(option, new List<OptionBase>() { subOption });
+                    }
+                }
+            }
+        }
+
+        public void UnLoadAllOptions()
+        {
+            // 使用HashSet避免重复销毁
+            var allOptions = new HashSet<GameObject>();
+
+            // 所有子选项
+            foreach (var subList in options.Values)
+            {
+                if (subList == null) continue;
+
+                foreach (var option in subList)
+                {
+                    if (option != null) allOptions.Add(option.gameObject);
+                }
+            }
+
+            // 所有主选项
+            foreach (var mainOption in options.Keys)
+            {
+                if (mainOption != null) allOptions.Add(mainOption.gameObject);
+            }
+
+            // 全步骤
+            foreach (var spreadOption in spreadOptions)
+            {
+                if (spreadOption != null) allOptions.Add(spreadOption);
+            }
+
+            // 统一销毁
+            foreach (var option in allOptions)
+            {
+                if (option.gameObject == null) continue;
+
+                if (Application.isPlaying)
+                {
+                    Destroy(option.gameObject);
+                }
+                else
+                {
+                    DestroyImmediate(option.gameObject);
+                }
+            }
+
+            options.Clear();
+            spreadOptions.Clear();
+        }
+
+        private bool JudgeMainProcedure(OptionBase option, out OptionBase mainProcedure)
+        {
+            // 检查是否是主流程(字典键)
+            if (options.TryGetValue(option, out _))
+            {
+                mainProcedure = option;
+                return true;
+            }
+
+            // 是子流程，out子流程的主流程
+            mainProcedure = options.FirstOrDefault(kv => kv.Value?.Contains(option) == true).Key;
+            return false;
+        }
+
+        public void ChangeState(OptionBase currOption)
+        {
+            bool isMain = JudgeMainProcedure(currOption, out OptionBase mainProcedure);
+
+            // 关闭其他已选中的流程
+            if (isMain)
+            {
+                // 不可重复选
+                foreach (var option in options.Keys.Where(o => o == currOption && o.Bool_IsOn))
+                {
+                    return;
+                }
+
+                // 模式锁环节
+                if (GlobalManager.Instance.GameMode == GameMode.Exam && currOption.index < currentMainIndex) return;
+
+                // 关闭其他主流程及其子流程
+                foreach (var option in options.Keys.Where(o => o != currOption && o.Bool_IsOn))
+                {
+                    CloseOptionWithSubs(option);
+                }
+            }
+            else
+            {
+                // 不可重复选
+                foreach (var option in options[mainProcedure].Where(o => o == currOption && o.Bool_IsOn))
+                {
+                    return;
+                }
+
+                if (GlobalManager.Instance.GameMode == GameMode.Exam && currOption.index < currentSubIndex) return;
+
+                // 关闭当前主流程下的其他子流程
+                foreach (var option in options[mainProcedure].Where(o => o != currOption && o.Bool_IsOn))
+                {
+                    CloseOption(option);
+                }
+            }
+
+            // 启用当前选项
+            currOption.ChangeState(true);
+            // 启用拓展第一项
+            if (currOption.procedureInfo.hasExtension)
+            {
+                options[mainProcedure].First().ChangeState(true);
+                currentSubIndex = options[mainProcedure].First().index;
+            }
+
+            if (isMain)
+                currentMainIndex = currOption.index;
+            else
+                currentSubIndex = currOption.index;
+        }
+
+        private void CloseOptionWithSubs(OptionBase option)
+        {
+            if (option.procedureInfo.hasExtension)
+            {
+                options[option].ForEach(o =>
+                {
+                    if (o.Bool_IsOn)
+                    {
+                        CloseOption(o);
+                    }
+                });
+            }
+
+            CloseOption(option);
+        }
+
+        private void CloseOption(OptionBase option)
+        {
+            option.ChangeState(false);
+        }
+
+        /// <summary>
+        /// 自定义开启选项
+        /// </summary>
+        private void EnterProcedure(OptionBase option)
+        {
+            bool isMain = JudgeMainProcedure(option, out OptionBase _Main);
+
+            if (isMain && option.procedureInfo.hasExtension)
+            {
+                ChangeState(option);
+                ChangeState(options[option].First());
+            }
+            else if (isMain && !option.procedureInfo.hasExtension)
+            {
+                ChangeState(option);
+            }
+            else if (!isMain)
+            {
+                ChangeState(_Main);
+                ChangeState(option);
+            }
+        }
+
+        /// <summary>
+        /// 框架进入流程
+        /// </summary>
+        public void ChangeProcedure(ProcedureConfig config)
+        {
+            Main.Event.Fire(this, Event_ChangeState.Create(new Event_ChangeState(config)));
+            currentProcedure = config;
 
 #if UNITY_EDITOR
-        EditorUtility.SetDirty(this);
+            EditorUtility.SetDirty(this);
 #endif
+        }
     }
 }

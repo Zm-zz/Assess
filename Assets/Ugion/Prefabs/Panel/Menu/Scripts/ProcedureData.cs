@@ -18,8 +18,7 @@ public class ProcedureInfo
 {
     public ProcedureConfig ProcedureConfig;
 
-    [LabelText("Extension")]
-    public bool hasExtension;      // 是否有扩展流程
+    public bool hasExtension;
 
     [ShowIf("hasExtension")]
     [TableList(ShowIndexLabels = true)]
@@ -36,11 +35,7 @@ public class ProcedureInfo
 [Serializable]
 public struct ProcedureConfig
 {
-    [LabelText("Procedure")]
-    [HorizontalGroup("BaseInfo")]
-    public string procedureName;    // 流程唯一标识
+    [BoxGroup("BaseInfo", false)][LabelText("追踪标识")] public string procedureName;
 
-    [LabelText("Title")]
-    [HorizontalGroup("BaseInfo")]
-    public string procedureTitle;  // 流程显示名称
+    [BoxGroup("BaseInfo", false)][LabelText("菜单名称")] public string procedureTitle;
 }

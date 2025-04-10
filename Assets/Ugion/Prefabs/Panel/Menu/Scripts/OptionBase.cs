@@ -2,68 +2,75 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Button), typeof(UIChange))]
-public class OptionBase : MonoBehaviour
+namespace Launch
 {
-    [Header("---------- IsOn")]
-    [ReadOnly][SerializeField] private bool bool_IsOn;
-    [ReadOnly] public ProcedureInfo procedureInfo;
-    [ReadOnly] public MenuManager menuManager;
-
-    [ReadOnly] public int index = -1;
-
-    private Button but_Self;
-    private UIChange _UIChange;
-
-    [HideInInspector]
-    public Transform extensionMenu;
-
-    public bool Bool_IsOn
+    [RequireComponent(typeof(Button), typeof(UIChange))]
+    public class OptionBase : MonoBehaviour
     {
-        get => bool_IsOn;
-        set
-        {
-            bool_IsOn = value;
-        }
-    }
+        [Header("---------- IsOn")]
+        [ReadOnly][SerializeField] private bool bool_IsOn;
+        [ReadOnly] public ProcedureInfo procedureInfo;
+        [ReadOnly] public MenuManager menuManager;
 
-    public virtual void ChangeState(bool isOn)
-    {
-        Bool_IsOn = isOn;
-        _UIChange.ChangeState(isOn);
+        [ReadOnly] public int index = -1;
 
-        if (procedureInfo.hasExtension)
+        private Button but_Self;
+        private UIChange _UIChange;
+        private FlexSubOptions _FlexSubOptions;
+
+        [HideInInspector]
+        public Transform extensionMenu;
+
+        public bool Bool_IsOn
         {
-            extensionMenu.gameObject.SetActive(isOn);
-        }
-        else
-        {
-            if (isOn)
+            get => bool_IsOn;
+            set
             {
-                // 执行流程
-                menuManager.ChangeProcedure(procedureInfo.ProcedureConfig);
+                bool_IsOn = value;
             }
         }
-    }
 
-    /// <summary>
-    /// 初始化 
-    /// clickAction 为 null，不会赋值
-    /// </summary>
-    public virtual void Initialize(MenuManager menuManager, ProcedureInfo procedureInfo, int index)
-    {
-        but_Self = GetComponent<Button>();
-        _UIChange = GetComponent<UIChange>();
+        public virtual void ChangeState(bool isOn)
+        {
+            Bool_IsOn = isOn;
+            _UIChange.ChangeState(isOn);
 
-        bool_IsOn = false;
+            if (procedureInfo.hasExtension)
+            {
+                //extensionMenu.gameObject.SetActive(isOn);
+                _FlexSubOptions.Spread(isOn);
+            }
+            else
+            {
+                if (isOn)
+                {
+                    // 执行流程
+                    menuManager.ChangeProcedure(procedureInfo.ProcedureConfig);
+                }
+            }
+        }
 
-        this.index = index;
-        this.procedureInfo = procedureInfo;
-        this.menuManager = menuManager;
+        /// <summary>
+        /// 初始化 
+        /// clickAction 为 null，不会赋值
+        /// </summary>
+        public virtual void Initialize(MenuManager menuManager, ProcedureInfo procedureInfo, int index)
+        {
+            but_Self = GetComponent<Button>();
+            _UIChange = GetComponent<UIChange>();
+            _FlexSubOptions = transform.parent.GetComponentInChildren<FlexSubOptions>();
+            extensionMenu = _FlexSubOptions.transform;
 
-        transform.GetComponentInChildren<Text>().text = procedureInfo.ProcedureConfig.procedureTitle;
+            bool_IsOn = false;
 
-        but_Self.onClick.RemoveAllListeners();
-        but_Self.onClick.AddListener(() => menuManager.ChangeState(this));
+            this.index = index;
+            this.procedureInfo = procedureInfo;
+            this.menuManager = menuManager;
+
+            transform.GetComponentInChildren<Text>().text = procedureInfo.ProcedureConfig.procedureTitle;
+
+            but_Self.onClick.RemoveAllListeners();
+            but_Self.onClick.AddListener(() => menuManager.ChangeState(this));
+        }
     }
 }

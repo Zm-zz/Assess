@@ -1,8 +1,6 @@
 using GameFramework.Fsm;
 using GameFramework.Procedure;
 using Launch;
-using StarForce;
-using UnityEngine;
 
 public class GlobalManager : SingletonMonoIdlerAuto<GlobalManager>
 {
@@ -18,15 +16,15 @@ public class GlobalManager : SingletonMonoIdlerAuto<GlobalManager>
     {
         this.procedureOwner = procedureOwner;
 
-        _MenuManager = FindObjectOfType<MenuManager>();
-        _EventDataManager = FindObjectOfType<EventDataManager>();
-
         InitManagers();
     }
 
 
     private void InitManagers()
     {
+        _MenuManager = FindObjectOfType<MenuManager>();
+        _EventDataManager = FindObjectOfType<EventDataManager>();
+
         _MenuManager.Initialize();
         _EventDataManager.Initialize();
     }

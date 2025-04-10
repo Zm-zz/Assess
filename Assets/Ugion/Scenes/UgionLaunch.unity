@@ -217,7 +217,6 @@ GameObject:
   m_Component:
   - component: {fileID: 717085666}
   - component: {fileID: 717085665}
-  - component: {fileID: 717085664}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -225,19 +224,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &717085664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717085663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1090b1fbe020adf4692648ef2e8f2a20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameMode: 1
 --- !u!114 &717085665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,6 +655,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2052679068}
+  - component: {fileID: 2052679070}
+  - component: {fileID: 2052679069}
   - component: {fileID: 2052679067}
   m_Layer: 0
   m_Name: Scripts
@@ -704,6 +692,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2052679069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052679066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d773add3ec792843b64ef7e5d98a70e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pre_SpreadOption: {fileID: 7328725700192471897, guid: ed061fa6db5c4e741827938a69f392ad,
+    type: 3}
+  pre_SubMenu: {fileID: 8266330830163016211, guid: 3a46fce99a2f952478edfeaa35f026ce,
+    type: 3}
+  procedureData: {fileID: 11400000, guid: d09b1b3f08d9d60449da7a4018097fa5, type: 2}
+  _IsDefaultEnter: 0
+--- !u!114 &2052679070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052679066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1090b1fbe020adf4692648ef2e8f2a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameMode: 0
 --- !u!1 &1244342723559763904
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,7 +736,7 @@ GameObject:
   - component: {fileID: 1244342723559763966}
   - component: {fileID: 1244342723559763905}
   m_Layer: 5
-  m_Name: Panel_In
+  m_Name: MainCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -818,15 +837,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1244342723559763964}
     m_Modifications:
-    - target: {fileID: 1909881902, guid: b87f9783d359b8242a2e1e152e8adf3b, type: 3}
-      propertyPath: m_Name
-      value: Decorate
-      objectReference: {fileID: 0}
-    - target: {fileID: 5287954667282277473, guid: b87f9783d359b8242a2e1e152e8adf3b,
-        type: 3}
-      propertyPath: _IsDefaultEnter
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7857290195451729626, guid: b87f9783d359b8242a2e1e152e8adf3b,
         type: 3}
       propertyPath: m_AnchorMax.x
