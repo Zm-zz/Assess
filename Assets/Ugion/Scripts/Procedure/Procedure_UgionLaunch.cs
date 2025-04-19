@@ -1,5 +1,6 @@
 ﻿using GameFramework.Fsm;
 using GameFramework.Procedure;
+using Launch;
 
 public class Procedure_UgionLaunch : ProcedureBase
 {
@@ -12,8 +13,7 @@ public class Procedure_UgionLaunch : ProcedureBase
     {
         base.OnEnter(procedureOwner);
 
-        GlobalManager.Instance.Launch(procedureOwner);
-
+       Main.Global.Launch(procedureOwner);
     }
 
     protected override void OnUpdate(IFsm<IProcedureManager> procedureOwner, float elapseSeconds, float realElapseSeconds)

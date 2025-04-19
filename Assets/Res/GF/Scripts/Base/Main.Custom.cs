@@ -1,5 +1,3 @@
-using UnityEngine;
-
 namespace Launch
 {
     /// <summary>
@@ -7,9 +5,15 @@ namespace Launch
     /// </summary>
     public partial class Main
     {
+        public static GlobalComponent Global
+        {
+            get;
+            private set;
+        }
+
         private static void InitCustomComponents()
         {
-            
+            Global = UnityGameFramework.Runtime.GameEntry.GetComponent<GlobalComponent>();
         }
     }
 }

@@ -16,8 +16,8 @@ public class EventDataManager : MonoBehaviour
 
         if (ne != null)
         {
-            GlobalManager.Instance.ChangeProcedure(ne.ProcedureName);
-            Debug.Log($"<color=orange>ChangeProcedure£º</color>{ne.ProcedureTitle}");
+            Main.Global.ChangeProcedure(ne.ProcedureName);
+            Debug.Log($"<size=13><color=orange>ChangeProcedure£º</color></size>{ne.ProcedureTitle}");
         }
     }
 
