@@ -106,9 +106,9 @@ namespace Launch
 
                     if (subSpread.childCount > 1)
                     {
-                        Vector3 lastPos = subSpread.GetChild(subSpread.childCount - 2).GetComponent<RectTransform>().position;
+                        Vector3 lastPos = subSpread.GetChild(subSpread.childCount - 2).GetComponent<RectTransform>().anchoredPosition;
                         Vector3 newPos = new Vector3(lastPos.x, lastPos.y - subRect.rect.height, 0);
-                        subRect.position = newPos;
+                        subRect.anchoredPosition = newPos;
                     }
 
                     ProcedureInfo info = new ProcedureInfo(config, false, null);
