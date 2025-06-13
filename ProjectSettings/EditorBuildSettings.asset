@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Res/GF/Scenes/GFLaunch.unity
-    guid: c08f0bff771c3204697b5a97cea96d99
-  - enabled: 1
     path: Assets/GameMain/Scenes/StarForce Launcher.unity
     guid: 9d2d51bf0fc3dfc42908e3a7a64f4feb
   - enabled: 1
@@ -17,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameMain/Scenes/Menu.unity
     guid: b031b4f2980561542a7f7ba41391edc3
+  - enabled: 0
+    path: Assets/Res/GF/Scenes/GFLaunch.unity
+    guid: c08f0bff771c3204697b5a97cea96d99
+  - enabled: 0
+    path: Assets/Ugion/Scenes/Ugion Launch.unity
+    guid: d62ea705e85730d47aa03ec8716e2e32
   m_configObjects: {}

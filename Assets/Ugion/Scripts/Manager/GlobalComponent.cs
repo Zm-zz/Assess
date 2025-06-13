@@ -10,12 +10,13 @@ public class GlobalComponent : GameFrameworkComponent
 {
     public GameMode GameMode;
 
+    public UIFormVerify UIFormVerify;
+
     private IFsm<IProcedureManager> procedureOwner;
 
     private EventDataManager _EventDataManager;
     private MenuManager _MenuManager;
     private CameraManager _CameraManager;
-
 
     public void Launch(IFsm<IProcedureManager> procedureOwner)
     {
@@ -33,6 +34,11 @@ public class GlobalComponent : GameFrameworkComponent
         _EventDataManager.Initialize();
         _MenuManager.Initialize();
         _CameraManager.Initialize();
+    }
+
+    public void SetMode(GameMode gameMode)
+    {
+        GameMode = gameMode;
     }
 
     public void MoveToTarget(string pointName, float motionTime = 0, UnityAction action = null, bool canMove = true, bool canLift = true)

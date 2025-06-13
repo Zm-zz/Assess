@@ -50,8 +50,7 @@ namespace Launch
 
         public void Initialize()
         {
-            trans_Parent = GameObject.Find("MainCanvas/Panel_Menu/Scroll Vertical/Viewport/Content").transform;
-
+            trans_Parent = GameObject.Find("UI_MenuForm/Panel_MenuForm/Scroll Vertical/Viewport/Content").transform;
             InitOptions(procedureData);
         }
 

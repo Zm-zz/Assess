@@ -1,9 +1,10 @@
+#if UNITY_EDITOR
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
+using UnityEngine;
 using UnityEditor;
 using UnityEditor.ProjectWindowCallback;
-using UnityEngine;
 
 public class CreateProcedureScript
 {
@@ -61,3 +62,5 @@ class CreateProcedureScriptAsset : EndNameEditAction
     }
 
 }
+
+#endif

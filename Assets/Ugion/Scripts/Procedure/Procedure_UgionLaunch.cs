@@ -13,13 +13,15 @@ public class Procedure_UgionLaunch : ProcedureBase
     {
         base.OnEnter(procedureOwner);
 
-       Main.Global.Launch(procedureOwner);
+       // Main.UI.OpenUIForm(AssetUtility.GetUgionUIFormAsset("MenuForm"), "UIForm");
+        //Main.UI.OpenUIForm(1);
+
+        Main.Global.Launch(procedureOwner);
     }
 
     protected override void OnUpdate(IFsm<IProcedureManager> procedureOwner, float elapseSeconds, float realElapseSeconds)
     {
         base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
-
     }
 
     protected override void OnLeave(IFsm<IProcedureManager> procedureOwner, bool isShutdown)

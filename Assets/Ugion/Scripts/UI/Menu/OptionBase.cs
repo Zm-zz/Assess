@@ -37,7 +37,6 @@ namespace Launch
 
             if (procedureInfo.hasExtension)
             {
-                //extensionMenu.gameObject.SetActive(isOn);
                 _FlexSubOptions.Spread(isOn);
             }
             else

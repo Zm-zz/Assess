@@ -35,7 +35,7 @@ public class ProcedureInfo
 [Serializable]
 public struct ProcedureConfig
 {
-    [BoxGroup("BaseInfo", false)][LabelText("追踪标识")] public string procedureName;
+    [BoxGroup("Flag", false)][LabelText("追踪标识")] public string procedureName;
 
-    [BoxGroup("BaseInfo", false)][LabelText("菜单名称")] public string procedureTitle;
+    [BoxGroup("Flag", false)][LabelText("菜单标题")] public string procedureTitle;
 }

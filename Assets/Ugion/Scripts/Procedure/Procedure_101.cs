@@ -1,6 +1,5 @@
 ﻿using GameFramework.Fsm;
 using GameFramework.Procedure;
-using UnityGameFramework.Runtime;
 
 public class Procedure_101 : ProcedureBase
 {
@@ -19,7 +18,6 @@ public class Procedure_101 : ProcedureBase
     protected override void OnUpdate(IFsm<IProcedureManager> procedureOwner, float elapseSeconds, float realElapseSeconds)
     {
         base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
-
     }
 
     protected override void OnLeave(IFsm<IProcedureManager> procedureOwner, bool isShutdown)
