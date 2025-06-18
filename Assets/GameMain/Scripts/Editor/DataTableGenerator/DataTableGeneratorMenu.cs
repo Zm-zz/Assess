@@ -35,17 +35,15 @@ namespace StarForce.Editor.DataTableTools
             AssetDatabase.Refresh();
         }
 
+        #region Excel To Txt
         public static readonly string[] DataTableNames = new string[]
        {
 
             "Entity",       // 实体
-           
             "Scene",        // 场景
             "Sound",        // 声音
-          
             "UIForm",       // 界面
             "UISound",      // UI声音
-           
        };
 
         [MenuItem("Game Framework/DataTable/Excel To Txt", false, 0)]
@@ -152,6 +150,6 @@ namespace StarForce.Editor.DataTableTools
             }
             return sb.ToString();
         }
-
+        #endregion
     }
 }
