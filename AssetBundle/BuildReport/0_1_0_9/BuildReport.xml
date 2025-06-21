@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <BuildReport>
+    <Summary>
+      <ProductName>Launch</ProductName>
+      <CompanyName>Owner</CompanyName>
+      <GameIdentifier>com.Owner.Launch</GameIdentifier>
+      <GameFrameworkVersion>2021.05.31</GameFrameworkVersion>
+      <UnityVersion>2021.3.15f1c1</UnityVersion>
+      <ApplicableGameVersion>0.1.0</ApplicableGameVersion>
+      <InternalResourceVersion>9</InternalResourceVersion>
+      <Platforms>WebGL</Platforms>
+      <AssetBundleCompression>LZ4</AssetBundleCompression>
+      <CompressionHelperTypeName>UnityGameFramework.Runtime.DefaultCompressionHelper</CompressionHelperTypeName>
+      <AdditionalCompressionSelected>True</AdditionalCompressionSelected>
+      <ForceRebuildAssetBundleSelected>True</ForceRebuildAssetBundleSelected>
+      <BuildEventHandlerTypeName>StarForce.Editor.StarForceBuildEventHandler</BuildEventHandlerTypeName>
+      <OutputDirectory>F:/UnityProject/Own/Assess/AssetBundle</OutputDirectory>
+      <BuildAssetBundleOptions>DeterministicAssetBundle, ForceRebuildAssetBundle, ChunkBasedCompression</BuildAssetBundleOptions>
+    </Summary>
+    <Resources Count="6">
+      <Resource Name="Prefabs/UIForms/UI_AboutForm" Extension="dat" LoadType="1" Packed="True">
+        <Assets Count="1">
+          <Asset Guid="4fde5f6e269f8af4ca3b5e9f4594d4eb" Name="Assets/Res/GF/Prefabs/UIForms/UI_AboutForm.prefab" Length="23581" HashCode="-657786304" />
+        </Assets>
+        <Codes>
+          <WebGL Length="22842" HashCode="-675945919" CompressedLength="22842" CompressedHashCode="-675945919" />
+        </Codes>
+      </Resource>
+      <Resource Name="Prefabs/UIForms/UI_InGameForm" Extension="dat" LoadType="1" Packed="True">
+        <Assets Count="1">
+          <Asset Guid="1d0779e2648ca044ca1426128484bce3" Name="Assets/Res/GF/Prefabs/UIForms/UI_InGameForm.prefab" Length="9723" HashCode="-1870006101" />
+        </Assets>
+        <Codes>
+          <WebGL Length="4636561" HashCode="2101205170" CompressedLength="4636561" CompressedHashCode="2101205170" />
+        </Codes>
+      </Resource>
+      <Resource Name="Prefabs/UIForms/UI_MenuForm" Extension="dat" LoadType="1" Packed="True">
+        <Assets Count="1">
+          <Asset Guid="5055d68fcbfd2bd4cbe8f028cb886681" Name="Assets/Res/GF/Prefabs/UIForms/UI_MenuForm.prefab" Length="37987" HashCode="-77986260" />
+        </Assets>
+        <Codes>
+          <WebGL Length="4638432" HashCode="-1884478255" CompressedLength="4638432" CompressedHashCode="-1884478255" />
+        </Codes>
+      </Resource>
+      <Resource Name="Prefabs/UIForms/UI_SettingForm" Extension="dat" LoadType="1" Packed="True">
+        <Assets Count="1">
+          <Asset Guid="1ea973702b297a94b8e1121c2ed022ac" Name="Assets/Res/GF/Prefabs/UIForms/UI_SettingForm.prefab" Length="90804" HashCode="-1646283931" />
+        </Assets>
+        <Codes>
+          <WebGL Length="4647775" HashCode="-2022187397" CompressedLength="4647775" CompressedHashCode="-2022187397" />
+        </Codes>
+      </Resource>
+      <Resource Name="Scenes/GFLaunch" Extension="dat" LoadType="1" Packed="True">
+        <Assets Count="1">
+          <Asset Guid="c08f0bff771c3204697b5a97cea96d99" Name="Assets/Res/GF/Scenes/GFLaunch.unity" Length="19668" HashCode="509593551" />
+        </Assets>
+        <Codes>
+          <WebGL Length="75958" HashCode="-1677035768" CompressedLength="75958" CompressedHashCode="-1677035768" />
+        </Codes>
+      </Resource>
+      <Resource Name="Scripts/Utility/CreateProcedure/Procedure_" Extension="dat" LoadType="1" Packed="False">
+        <Assets Count="1">
+          <Asset Guid="b6a07a122ef4ac349bfc0d6abbf73783" Name="Assets/Res/GF/Scripts/Utility/CreateProcedure/Procedure_.cs.txt" Length="1055" HashCode="-463295051" />
+        </Assets>
+        <Codes>
+          <WebGL Length="1601" HashCode="-1294818019" CompressedLength="1601" CompressedHashCode="-1294818019" />
+        </Codes>
+      </Resource>
+    </Resources>
+  </BuildReport>
+</UnityGameFramework>

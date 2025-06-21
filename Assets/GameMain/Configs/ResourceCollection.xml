@@ -2,11 +2,11 @@
 <UnityGameFramework>
   <ResourceCollection>
     <Resources>
-      <Resource Name="Prefabs/UIForms/UI_AboutForm" LoadType="0" Packed="True" />
-      <Resource Name="Prefabs/UIForms/UI_InGameForm" LoadType="0" Packed="True" />
-      <Resource Name="Prefabs/UIForms/UI_MenuForm" LoadType="0" Packed="True" />
-      <Resource Name="Prefabs/UIForms/UI_SettingForm" LoadType="0" Packed="True" />
-      <Resource Name="Scenes/GFLaunch" LoadType="0" Packed="True" />
+      <Resource Name="Prefabs/UIForms/UI_AboutForm" LoadType="1" Packed="True" />
+      <Resource Name="Prefabs/UIForms/UI_InGameForm" LoadType="1" Packed="True" />
+      <Resource Name="Prefabs/UIForms/UI_MenuForm" LoadType="1" Packed="True" />
+      <Resource Name="Prefabs/UIForms/UI_SettingForm" LoadType="1" Packed="True" />
+      <Resource Name="Scenes/GFLaunch" LoadType="1" Packed="True" />
     </Resources>
     <Assets>
       <Asset Guid="1d0779e2648ca044ca1426128484bce3" ResourceName="Prefabs/UIForms/UI_InGameForm" />

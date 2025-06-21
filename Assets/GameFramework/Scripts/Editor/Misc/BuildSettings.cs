@@ -59,6 +59,11 @@ namespace UnityGameFramework.Editor
                     s_DefaultSceneNames.Add(defaultSceneName);
                 }
 
+                foreach (var item in s_DefaultSceneNames)
+                {
+                    Debug.Log(item);
+                }
+
                 xmlNodeList = xmlSearchScenePaths.ChildNodes;
                 for (int i = 0; i < xmlNodeList.Count; i++)
                 {

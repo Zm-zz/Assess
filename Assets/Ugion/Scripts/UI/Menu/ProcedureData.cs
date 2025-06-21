@@ -1,6 +1,9 @@
+using GameFramework.Procedure;
 using Sirenix.OdinInspector;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 
@@ -35,7 +38,6 @@ public class ProcedureInfo
 [Serializable]
 public struct ProcedureConfig
 {
-    [BoxGroup("Flag", false)][LabelText("追踪标识")] public string procedureName;
-
+    [BoxGroup("Flag", false)][LabelText("流程脚本")][Tooltip("请拖拽继承自<ProcedureBase>的类型")] public UnityEngine.Object procedureScript;
     [BoxGroup("Flag", false)][LabelText("菜单标题")] public string procedureTitle;
 }
